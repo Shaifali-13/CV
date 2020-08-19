@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+</head>
+
+<body>
+
+  <form class="" action="index.html" method="post">
+    <fieldset>
+      <legend><strong>PERSONAL DETAILS</strong></legend>
+
+      <label>First Name: </label>
+      <input type="text" name="fName" value="" required>
+      <br><br>
+      <label>Last Name: </label>
+      <input type="text" name="lName" value="">
+      <br><br>
+      <label>Gender: </label>
+      <table cellpadding="2px">
+        <tr>
+          <td><label>Male</label></td>
+          <td><input type="radio" name="rgroup" value="Male" required></td>
+          <!--giving the name as "rgroup", the radio button enables
+                selection for only one radio button -->
+        </tr>
+
+        <tr>
+          <td><label>Female</label></td>
+          <td><input type="radio" name="rgroup" value="Female"></td>
+        </tr>
+
+        <tr>
+          <td><label>Others</label></td>
+          <td><input type="radio" name="rgroup" value="others"></td>
+        </tr>
+
+      </table>
+
+      <br>
+
+      <label>Enter your DoB: </label>
+      <input type="date" name="" value="">
+      <br><br>
+
+      <label>Enter your current age: </label>
+      <input type="number" name="age" value="" min="18" max="30">
+
+
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+      <legend><strong>ACADEMIC DETAILS</strong></legend>
+
+      <table cellspacing="10px">
+        <tr>
+          <td><label>Email: </label></td>
+          <td><input type="email" name="email" value="" required>
+            <!--The value attribute supplies the default value-->
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Password: </label></td>
+          <td> <input type="password" name="" value="" required></td>
+        </tr>
+
+        <tr>
+          <td><label>Select Your College</label></td>
+          <td><select class="" name="College">
+              <option value="NIT Allahabad">NIT Allahabad</option>
+              <option value="">NIT Trichy</option>
+              <option value="">NIT Surathkal</option>
+              <option value="">NIT Agartala</option>
+              <option value="">NIT Jamshedpur</option>
+              <option value="">NIT Jalandhar</option>
+              <option value="">NIT Hamirpur</option>
+              <option value="">NIT Goa</option>
+            </select></td>
+        </tr>
+
+        <tr>
+          <td><label>College ID: </label></td>
+          <td><input type="text" name="" value="" required></td>
+        </tr>
+
+
+        <table cellspacing="5px" >
+          <tr>
+            <td><label for="">Select Your Subjects: </label></td>
+          </tr>
+          <tr>
+            <td><label>Computer Science</label></td>
+            <td><input type="checkbox" name="cs" value="cs"></td>
+          </tr>
+
+          <tr>
+            <td><label for="">English Language</label></td>
+            <td><input type="checkbox" name="el" value=""></td>
+          </tr>
+
+          <tr>
+            <td><label>History and Civics</label></td>
+            <td><input type="checkbox" name="" value=""></td>
+          </tr>
+
+          <tr>
+            <td><label>Mathematics</label></td>
+            <td><input type="checkbox" name="" value=""></td>
+          </tr>
+        </table>
+
+      </table>
+
+      <br><br>
+
+      <label>Upload your image: </label>
+      <input type="file" name="" value="" multiple>
+
+
+    </fieldset>
+
+    <br><br>
+
+    <input type="submit" name="submit" value="Submit">
+    <input type="reset" name="reset" value="Reset">
+
+
+  </form>
+
+
+</body>
+
+</html>
